@@ -1,4 +1,3 @@
-const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -13,40 +12,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.vue$/,
-        loader: 'vue-loader'
-      },
-      {
-        test: /\.(scss|css)$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
-      },
-      {
         test: /\.ts$/,
         use: [
           'babel-loader',
-          {
-            loader: 'ts-loader',
-            options: {
-              appendTsSuffixTo: [/\.vue$/], // 识别.vue单文件
-            }
-          }
-        ],
-        exclude: /node_modules/
-      },
-      {
-        test: /\.tsx$/,
-        use: [
-          'babel-loader',
-          {
-            loader: 'ts-loader',
-            options: {
-              appendTsxSuffixTo: [/\.vue$/], // 识别.vue单文件
-            }
-          }
+          'ts-loader'
         ],
         exclude: /node_modules/
       },
@@ -60,9 +29,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      title: '组件发布工程',
       template: path.resolve(__dirname, './src/template/index.html'),
       appMountId: 'app'
     })

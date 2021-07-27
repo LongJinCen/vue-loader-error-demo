@@ -9,8 +9,6 @@
       "Src/*": ["./src/*"],
     },
     "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "traceResolution": false
+    "resolveJsonModule": true
   }
 }

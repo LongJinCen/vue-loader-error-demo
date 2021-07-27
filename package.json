@@ -19,7 +19,10 @@
   "homepage": "https://github.com/LongJinCen/vue-loader-error-demo#readme",
   "devDependencies": {
     "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.8",
+    "@babel/runtime": "^7.14.8",
+    "@babel/runtime-corejs3": "^7.14.8",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",

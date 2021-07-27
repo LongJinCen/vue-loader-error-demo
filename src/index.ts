@@ -1,7 +1,4 @@
-import vue from 'vue'
-import App from './App.vue'
+import { add } from './route'
 
-new vue({
-  el: '#app',
-  render: (h): any => h(App)
-})
+add(1, 2)
+console.log('fdslkfjlkdsfds');
