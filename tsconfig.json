@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/types/*"],
+      "Src/*": ["./src/*"],
+    },
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "traceResolution": false
+  }
+}
