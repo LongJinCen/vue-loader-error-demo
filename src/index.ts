@@ -1,4 +1,3 @@
-import { add } from './route'
+import DemoBlock from './demo-block.vue'
 
-add(1, 2)
-console.log('fdslkfjlkdsfds');
+console.log(DemoBlock.name, 'DemoBlock');
